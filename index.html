@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Generic Cover Letter Generator</title>
+</head>
+<body>
+    <main>
+        <h1>Generic Cover Letter Generator</h1>
+        <h2>Are you tired of writing a new cover letter for every position you apply for?<br>Fear not! Here is the Generic Cover Letter Generator!</h2>
+
+        <form action="/submit" method="post">
+            <label for="name">Name of the company:</label><br>
+            <input type="text" id="name" name="name" required placeholder="Company XYZ"><br><br>
+        
+            <label for="recruitingPage">Recruiting page:</label><br>
+            <input type="text" id="recruitingPage" name="recruitingPage" placeholder="Recruiting page XYZ"><br><br>
+        
+            <input type="submit" value="Submit" id="submit">
+          </form>
+            <p id="output"></p>
+        
+    </main>
+
+    <script type="module" src="/index.js"></script>
+</body>
+</html>
