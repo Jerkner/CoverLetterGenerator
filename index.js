@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
   Philip Jerkner`;
   
       outputElement.innerText = template;
+      document.getElementById("name").value = ''
+      document.getElementById("recruitingPage").value = ''
     });
   });
   
