@@ -9,20 +9,32 @@
 </head>
 <body>
     <main>
-        <h1>Generic Cover Letter Generator</h1>
-        <h2>Are you tired of writing a new cover letter for every position you apply for?<br>Fear not! Here is the Generic Cover Letter Generator!</h2>
-
-        <form action="/submit" method="post">
-            <label for="name">Name of the company:</label><br>
-            <input type="text" id="name" name="name" required placeholder="Company XYZ"><br><br>
+        <header>
+            <h1>Generic Cover Letter Generator</h1>
+            <h2>Are you tired of writing a new cover letter for every position you apply for?<br>Fear not! Here is the Generic Cover Letter Generator!</h2>
+        </header>
         
-            <label for="recruitingPage">Recruiting page:</label><br>
-            <input type="text" id="recruitingPage" name="recruitingPage" placeholder="Recruiting page XYZ"><br><br>
-        
-            <input type="submit" value="Submit" id="submit">
-          </form>
-            <p id="output"></p>
-        
+        <section>
+            <form action="/submit" method="post">
+                <label for="name">Name of the company:</label>
+                <br>
+                <input type="text" id="name" name="name" required placeholder="Company XYZ">
+                <br><br>
+            
+                <label for="recruitingPage">Recruiting page:</label>
+                <br>
+                <input type="text" id="recruitingPage" name="recruitingPage" placeholder="Recruiting page XYZ">
+                <br><br>
+            
+                <input type="submit" value="Submit" id="submit">
+            </form>
+            
+            <button id="copyButton">Copy to clipboard</button>
+            
+            <div>
+                <p id="output"></p>
+            </div>
+        </section>
     </main>
 
     <script type="module" src="/index.js"></script>
