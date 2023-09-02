@@ -13,19 +13,21 @@
             <h1>Generic Cover Letter Generator</h1>
             <h2>Are you tired of writing a new cover letter for every position you apply for?<br>Fear not! Here is the Generic Cover Letter Generator!</h2>
         </header>
-        
+
         <section>
             <form action="/submit" method="post">
-                <label for="name">Name of the company:</label>
-                <br>
-                <input type="text" id="name" name="name" required placeholder="Company XYZ">
-                <br><br>
+                <div class="input">
+                    <label for="name">Name of the company:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required placeholder="Company XYZ">
+                </div>
             
-                <label for="recruitingPage">Recruiting page:</label>
-                <br>
-                <input type="text" id="recruitingPage" name="recruitingPage" placeholder="Recruiting page XYZ">
-                <br><br>
-            
+                <div class="input">
+                    <label for="recruitingPage">Recruiting page:</label>
+                    <br>
+                    <input type="text" id="recruitingPage" name="recruitingPage" placeholder="Recruiting page XYZ">
+                </div>
+
                 <input type="submit" value="Submit" id="submit">
             </form>
             
