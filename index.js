@@ -38,6 +38,7 @@ Best regards,
 Philip Jerkner`;
         
         outputElement.value = template;
+        document.getElementById("name").value = ''
     });
     
 
