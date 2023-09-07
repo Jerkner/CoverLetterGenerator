@@ -5,37 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+        
     <title>Generic Cover Letter Generator</title>
 </head>
 <body>
     <main>
-        <header>
-            <h1>Generic Cover Letter Generator</h1>
-            <h2>Are you tired of writing a new cover letter for every position you apply for?<br>Fear not! Here is the Generic Cover Letter Generator!</h2>
-        </header>
-
-        <section>
-            <form action="/submit" method="post">
+        <section class="container">
+            <form id="coverLetterForm">
                 <div class="input">
                     <label for="name">Name of the company:</label>
                     <br>
-                    <input type="text" id="name" name="name" required placeholder="Company XYZ">
+                    <input type="text" id="name" name="name" placeholder="Company XYZ">
                 </div>
             
-                <div class="input">
-                    <label for="recruitingPage">Recruiting page:</label>
-                    <br>
-                    <input type="text" id="recruitingPage" name="recruitingPage" placeholder="Recruiting page XYZ">
-                </div>
+                <label for="recruitingPage">Name of recruiting site:</label>
+                <br>
+                <select id="recruitingPage" name="recruitingPage">
+                    <option>LinkedIn</option>
+                    <option>Wellfound</option>
+                    <option>Otta</option>
+                    <option>We Work Remotely</option>
+                    <option>Remotive</option>
+                    <option>DynamiteJobs</option>
+                    <option>Indeed</option>
+                    <option>FindAsync</option>
+                    <option>Arbetsförmedlingen</option>
+                    <option>Working Nomads</option>
+                </select>
+                <br>
 
+                <label for="role">Role:</label>
+                <br>
+                <select id="role" name="role">
+                    <option>Front-End Developer</option>
+                    <option>Web Developer</option>
+                    <option>React Developer</option>
+                <select>
+                <br>
                 <input type="submit" value="Submit" id="submit">
             </form>
             
             <button id="copyButton">Copy to clipboard</button>
+            <button id="downloadPDF">Download PDF</button>
             
-            <div>
-                <p id="output"></p>
-            </div>
+            <textarea id="output"></textarea>
         </section>
     </main>
 
