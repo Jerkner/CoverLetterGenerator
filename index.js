@@ -22,7 +22,7 @@ ${today}
 
 Dear hiring team at ${name},
 
-I am writing to express my strong interest in the ${role} position at ${name}, as advertised on ${recruitingPage}. As a self-taught ${role === "React Developer" ? "React developer" : role.toLowerCase()} with a strong passion for design and UI/UX, I am eager to contribute my skills to your development team.
+I am writing to express my strong interest in the ${role} position at ${name}, as advertised on ${recruitingPage}. As a self-taught ${role === "React Developer" ? "React developer" : role === "JavaScript Developer" ? "JavaScript developer" : role.toLowerCase()} with a strong passion for design and UI/UX, I am eager to contribute my skills to your development team.
 
 Proficient in HTML5, CSS3, JavaScript, and React, I'm adept at creating clean and intuitive interfaces. My experience in API integration and version control with Git complements my technical proficiency.
 
