@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const role = document.getElementById("role").value;
         const recruitingPage = document.getElementById("recruitingPage").value;
     
-        const template = `
-Name: Philip Jerkner
+        const template = 
+`Name: Philip Jerkner
 Location: Sweden and Portugal
 Email: philip@jerkner.se
 Phone: +46 76 808 53 92
