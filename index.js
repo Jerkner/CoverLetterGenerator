@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         const template = 
 `Name: Philip Jerkner
-Location: Sweden and Portugal
+Location: Portugal and Sweden
 Email: philip@jerkner.se
 Phone: +46 76 808 53 92
 
