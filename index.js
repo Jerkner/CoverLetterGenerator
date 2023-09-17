@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = document.getElementById("name").value;
         const role = document.getElementById("role").value;
         const recruitingPage = document.getElementById("recruitingPage").value;
+        const language = document.getElementById("language").value;
     
-        const template = 
+        const template = language === "English" ?
 `Name: Philip Jerkner
 Location: Portugal and Sweden
 Email: philip@jerkner.se
@@ -35,8 +36,32 @@ Portfolio: https://jerkner-portfolio.netlify.app/
 GitHub: https://github.com/Jerkner
 
 Best regards,
-Philip Jerkner`;
-        
+Philip Jerkner` :
+
+`Namn: Philip Jerkner
+Plats: Portugal och Sverige
+E-post: philip@jerkner.se
+Telefon: +46 76 808 53 92
+
+${today}
+
+Till rekryteringsteamet på ${name},
+
+Jag skriver för att uttrycka mitt starka intresse för ${role === "React Developer" ? "React-utvecklare" : role === "JavaScript Developer" ? "JavaScript-utvecklare" : role === "Web Developer" ? "webbutvecklare" : "frontend-utvecklare"}-positionen på ${name}, som annonserades på ${recruitingPage}. Som en självlärd ${role === "React Developer" ? "React-utvecklare" : role === "JavaScript Developer" ? "JavaScript-utvecklare" : role === "Web Developer" ? "webbutvecklare" : "frontend-utvecklare"} med en passion för design och användarupplevelse ser jag fram emot att bidra med mina färdigheter till ert utvecklingsteam.
+
+Jag behärskar HTML5, CSS3, JavaScript och React och är skicklig på att skapa rena och intuitiva gränssnitt. Min erfarenhet av API-integration och versionshantering med Git kompletterar min tekniska kompetens.
+
+Jag ser med entusiasm fram emot möjligheten att få tillföra mina färdigheter och min passion för utveckling till ${name}. Om ni söker efter en utvecklare som utmärker sig i att omvandla komplexiteter till eleganta lösningar, skulle jag vara tacksam för möjligheten att få diskutera detta vidare.
+
+Tack för att ni överväger min ansökan. Jag ser fram emot möjligheten att få bidra till ${name}s framgång.
+
+CV: https://jerkner-resume.netlify.app/
+Portfölj: https://jerkner-portfolio.netlify.app/
+GitHub: https://github.com/Jerkner
+
+Vänliga hälsningar,
+Philip Jerkner`
+
         outputElement.value = template;
         document.getElementById("name").value = ''
     });
