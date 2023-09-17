@@ -47,7 +47,7 @@ ${today}
 
 Till rekryteringsteamet på ${name},
 
-Jag skriver för att uttrycka mitt starka intresse för ${role === "React Developer" ? "React-utvecklare" : role === "JavaScript Developer" ? "JavaScript-utvecklare" : role === "Web Developer" ? "webbutvecklare" : "frontend-utvecklare"}-positionen på ${name}, som annonserades på ${recruitingPage}. Som en självlärd ${role === "React Developer" ? "React-utvecklare" : role === "JavaScript Developer" ? "JavaScript-utvecklare" : role === "Web Developer" ? "webbutvecklare" : "frontend-utvecklare"} med en passion för design och användarupplevelse ser jag fram emot att bidra med mina färdigheter till ert utvecklingsteam.
+Jag skriver för att uttrycka mitt starka intresse för ${role === "React Developer" ? "React-utvecklare" : role === "JavaScript Developer" ? "JavaScript-utvecklare" : role === "Web Developer" ? "webbutvecklare" : "frontend-utvecklare"}-positionen på ${name}, som annonserades på ${recruitingPage}. Som en självlärd ${role === "React Developer" ? "React-utvecklare" : role === "JavaScript Developer" ? "JavaScript-utvecklare" : role === "Web Developer" ? "webbutvecklare" : "frontend-utvecklare"} med en passion för design och användarupplevelse ser jag fram emot att få bidra med mina färdigheter till ert utvecklingsteam.
 
 Jag behärskar HTML5, CSS3, JavaScript och React och är skicklig på att skapa rena och intuitiva gränssnitt. Min erfarenhet av API-integration och versionshantering med Git kompletterar min tekniska kompetens.
 
